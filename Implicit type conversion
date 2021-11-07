@@ -3,7 +3,7 @@
 /*  Implicit type conversion :- Implicit type conversion is an automatic type conversion done by the compiler
 whenever data from different types is intermixed  */
 
-//            byte->short->int->long->float->double
+// How it goes:  byte->short->int->long->float->double
 
 class A{
 	public static void main(String[] args)
