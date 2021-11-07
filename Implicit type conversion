@@ -1,0 +1,21 @@
+// Java Program to Illustrate Automatic Type Conversion||Implicit type conversion
+
+/*  Implicit type conversion :- Implicit type conversion is an automatic type conversion done by the compiler
+whenever data from different types is intermixed  */
+
+//            byte->short->int->long->float->double
+
+class A{
+	public static void main(String[] args)
+	{
+		int i = 100;
+// Automatic type conversion Integer to long type
+		long l = i;
+// Automatic type conversion long to float type
+		float f = l;
+//printing the values
+		System.out.println("Int value " +i);
+		System.out.println("Long value " + l);
+		System.out.println("Float value " + f);
+	}
+}
