@@ -1,0 +1,39 @@
+/*
+
+If we want to assign a value of a larger data type to a smaller data type we perform explicit type casting
+or narrowing.  
+
+This is useful for incompatible data types where automatic conversion cannot be done.
+Here, the target type specifies the desired type to convert the specified value to.
+ 
+ */
+
+/* how it goes:- double->float->long->int ->short->byte  //larger to smaller data type 
+// here we can experience some missing values means for example if we are converting float value to integer 
+                             100.25(float)-->100(integer) 
+Here we see that the the decimal values are missing ,this is what happens in Explicit type conversion*/
+
+//Code:
+// Java progarm to implement Explicit type Conversion:
+
+
+public class A {
+	public static void main(String[] argv)
+	{
+      float F =100.25;
+      int I;
+      F=I;//converting Explicitply
+      System.out.println("After Conversion integer value of Float is:"+I);              
+	}
+}
+
+/*It generates an error that : 
+
+source_file.java:21: error: incompatible types: possible lossy conversion from double to float
+      float F =100.25;
+               ^
+1 error
+
+
+Process Finished.
+*/
